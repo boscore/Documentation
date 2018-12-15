@@ -155,14 +155,31 @@ BOS enhances the system contract and provides an interface that can set maximum 
 
 ## Issuance Method 
 
-The initial supply of BOS is 1 billion. 100 million will be managed by the BOS Foundation and will be unlocked in 10 years. In addition,1 billion for ecological incentives (10 million direct airdrops on EOS mainnet accounts, 20 million as excellent node and DApp team rewards, 70 million for DApp user incentives), and the remaining 800 million BOS will be exchanges in batches on the mainnet BOS. 
+The initial supply of BOS is 1 billion. The breakdown is as follows:
+- 100 million will be managed by the BOS Foundation (unlocked over 10 years)
+- 100 million will be reserved for ecological incentives 
+  - 10 million direct airdropped on EOS mainnet accounts
+  - 20 million rewarded to excellent node and DApp team rewards
+  - 70 million distributed for DApp user incentives)
+- 800 million BOS will be exchanges in batches on the mainnet BOS. 
 
-The annual inflation is 2%, among which the BP rewards is 1%, 0.8% for developer rewards and 0.2% for governance incentives. 
+The annual inflation is 2%:
+- 1% for BP rewards
+- 0.8% for developer rewards
+- 0.2% for governance incentives. 
 
 ## Developer Rewards 
 
-An additional 0.8% issuance will be given to the BOS eco-contribution code developer. Fifty candidates will be nominated by the community. Top 50 BPs vote 40 winners to get the awards: the top 10 share 40%, people ranked 11 to 20 share 30%, the last 20 share the remaining 30% evenly. The reward happens once every 3 months and each reward will be carried out with a one-week publicity. It will be re-evaluated if there is a reasonable objection. And each reward list will be recorded on chain.  
-As BOS continues to develop, developer rewards will be appropriately adjusted to allow the community to provide more momentum for the evolution of BOS. 
+To decentralize development of the core protocol, 0.8% of annual inflation will be distributed to BOS core code developers.
+
+Every 3 months, the top 50 block producers nominated by the community will vote on and rank 40 winners to get the awards:
+- The top 10 will share 40% (4% each)
+- Individuals ranked 11 to 20 will share 30% (3% each)
+- The last 20 share the remaining 30% (1.5% each) 
+
+The quarterly reward distribution will be preceded by releasing by a one-week public disclosure of the 40 nominated candidates. In case of reasonable objections by the community, the list will be re-evaluated. Each reward list will be recorded on chain.  
+
+As BOS continues to develop, developer rewards will be appropriately adjusted by the community to accelerate for the evolution of BOS. 
 
 ## Governance Model 
 
