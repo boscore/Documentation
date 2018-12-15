@@ -160,7 +160,7 @@ The initial supply of BOS is 1 billion. The breakdown is as follows:
 - 100 million will be reserved for ecological incentives 
   - 10 million direct airdropped on EOS mainnet accounts
   - 20 million rewarded to excellent node and DApp team rewards
-  - 70 million distributed for DApp user incentives)
+  - 70 million distributed for DApp user incentives
 - 800 million BOS will be exchanges in batches on the mainnet BOS. 
 
 The annual inflation is 2%:
