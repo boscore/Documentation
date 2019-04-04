@@ -104,7 +104,7 @@ All BOS community participants can submit proposals while staking 100 BOS to sub
 
 3. The 10% of the incentives for the proposal are equally divided between the auditors who agree with the majority of the BPs and the BPs who voted.
 
-![img](https://uploader.shimo.im/f/MTgBZrnIb5Q0i11U.png!thumbnail)
+![](https://github.com/libhasheos/Documentation/blob/master/imgs/wps.png)
 
 
 Any questions or enquiries you have, please feel free to contact us: 
