@@ -202,7 +202,6 @@ The BOS Network has been enhanced to address this, and the configurations can se
 ## Issuance Method 
 
 The Distributor which issues and sells BOS shall be an affiliate of the Foundation. The initial supply of BOS is 1 billion. The breakdown is as follows:
-
 - 100 million will be used to do eco-airdrop
   - 50 million directly airdropped to EOS mainnet accounts
   - 50 million will be airdropped based on the transaction volumes of DApps and BP teams
@@ -215,13 +214,11 @@ The Distributor which issues and sells BOS shall be an affiliate of the Foundati
   - 50 million will be up for sale in each round
 
 The annual inflation is 2%:
-
 - 1% for BP rewards
 - 0.8% for developer rewards
 - 0.2% for governance incentives. 
 
 In particular, it is highlighted that BOS:
-
 - (a)is non-refundable and cannot be exchanged for cash (or its equivalent value in any other virtual currency) or any payment obligation by the Foundation, the Distributor or any affiliate;
 - (b)does not represent or confer on the token holder any right of any form with respect to the Foundation, the Distributor (or any of its affiliates), or its revenues or assets, including without limitation any right to receive future dividends, revenue, shares, ownership right or stake, share or security, any voting, distribution, redemption, liquidation, proprietary (including all forms of intellectual property or licence rights), or other financial or legal rights or equivalent rights, or intellectual property rights or any other form of participation in or relating to the BOS Network, the Foundation, the Distributor and/or their service providers;
 - (c)is not intended to represent any rights under a contract for differences or under any other contract the purpose or pretended purpose of which is to secure a profit or avoid a loss;
@@ -236,7 +233,6 @@ The contributions in the token sale will be held by the Distributor (or its affi
 To decentralize development of the core protocol, 0.8% of annual inflation will be distributed to BOS core code developers.
 
 Every 3 months, the top 50 block producers nominated by the community will vote on and rank 40 winners to get the awards:
-
 - The top 10 will share 40% (4% each)
 - Individuals ranked 11 to 20 will share 30% (3% each)
 - The last 20 share the remaining 30% (1.5% each) 
