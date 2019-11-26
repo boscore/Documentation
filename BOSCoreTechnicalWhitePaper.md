@@ -31,11 +31,22 @@ The Whitepaper and the Website may be translated into a language other than Engl
 
 No part of the Whitepaper or the Website is to be copied, reproduced, distributed or disseminated in any way without the prior written consent of the Foundation or the Distributor.
 
+
+
+### BOSCore is committed to using technology to create a trusted business ecosystem, and to build a DPoS public chain covering one billion users.
+
+September 2018 V1
+November 2019 V2
+
+
+
 - [Background](#background)
 - [Overview](#overview)
 - [Consensus Algorithm](#consensus-algorithm)
 - [Interchain Communication](#interchain-communication)
+- [Oracle Machine](#Oracle)
 - [Pegged Coin](#pegged-coin)
+- [Post Quantum Encryption Approach]()
 - [Accounts](#accounts)
   - [Guaranteed Minimum Provision](#guaranteed-minimum-provision)
   - [Free Account Creation through Red Packet](#free-account-creation-through-red-packet)
@@ -46,8 +57,6 @@ No part of the Whitepaper or the Website is to be copied, reproduced, distribute
   - [Configurations on Chain](#configurations-on-chain)
   - [More Plugins](#more-plugins)
   - [Producing Schedule according to Time Zone](#producing-schedule-according-to-time-zone)
-  - [BOS Toolkit](#bos-toolkit)
-    - [Account Manager](#account-manager)
   - [P2P Self-Discovery](#p2p-self-discovery)
 - [Ecosystem Model](#ecosystem-model)
   - [Issuance Method](#issuance-method)
@@ -55,7 +64,7 @@ No part of the Whitepaper or the Website is to be copied, reproduced, distribute
   - [Governance Model](#governance-model)
   - [Economic Model](#economic-model)
 - [Conclusion](#conclusion)
-- [References](#references)
+- [References](#References)
 
 # Background 
 
