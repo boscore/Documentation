@@ -1,6 +1,5 @@
 # NOTICE AND DISCLAIMER
-
-------
+---
 
 PLEASE READ THE ENTIRETY OF THIS “NOTICE AND DISCLAIMER” SECTION CAREFULLY. NOTHING HEREIN CONSTITUTES LEGAL, FINANCIAL, BUSINESS OR TAX ADVICE AND YOU SHOULD CONSULT YOUR OWN LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S) BEFORE ENGAGING IN ANY ACTIVITY IN CONNECTION HEREWITH. NEITHER BOS FOUNDATION LTD. (THE FOUNDATION), ANY OF THE PROJECT TEAM MEMBERS (THE BOS TEAM) WHO HAVE WORKED ON THE BOS NETWORK (AS DEFINED HEREIN) OR PROJECT TO DEVELOP THE BOS NETWORK IN ANY WAY WHATSOEVER, ANY DISTRIBUTOR/VENDOR OF BOS TOKENS (THE DISTRIBUTOR), NOR ANY SERVICE PROVIDER SHALL BE LIABLE FOR ANY KIND OF DIRECT OR INDIRECT DAMAGE OR LOSS WHATSOEVER WHICH YOU MAY SUFFER IN CONNECTION WITH ACCESSING THIS WHITEPAPER, THE WEBSITE AT https://boscore.io (THE WEBSITE) OR ANY OTHER WEBSITES OR MATERIALS PUBLISHED BY THE FOUNDATION.
 
@@ -31,14 +30,10 @@ The Whitepaper and the Website may be translated into a language other than Engl
 
 No part of the Whitepaper or the Website is to be copied, reproduced, distributed or disseminated in any way without the prior written consent of the Foundation or the Distributor.
 
-
-
 ### BOSCore is committed to using technology to create a trusted business ecosystem, and to build a DPoS public chain covering one billion users.
 
-September 2018 V1
-November 2019 V2
-
-
+### September 2018 V1
+### November 2019 V2
 
 - [Background](#background)
 - [Overview](#overview)
@@ -91,14 +86,12 @@ The long confirmation time for transactions due to DPOS BFT consensus algorithm,
 After analysing the problem of the EOSIO consensus algorithm, in order to shorten the time required before a transaction becomes unchangeable, the BOS Network will use PBFT (Practical Byzantine Fault Tolerance [2]) instead of Pipelined BFT. In this way, BP is able to confirm the blocks immediately. The confirmation of blocks in real time enables the entire system to eventually to approach a near real-time consensus speed. 
 
 The consensus algorithm of the BOS Network is based on the PBFT theory, combined with the EOSIO code to improve, under the premise of ensuring Byzantine fault tolerance, the following changes will be made: 
-
 - 1.The mechanism of the Pipelined BFT's BP round outflow block is retained, and the synchronous clock and the block orders are strongly constrained  similiar to EOS.
 - 2.Remove the logic of the Pipelined BFT Consensus section by removing the implicit confirm and (explicit) confirm sections from the original block to avoid conflicts with PBFT consensus results in edge cases.
 - 3.Consensus communication mechanisms using existing p2p networks will use the PBFT mechanism to broadcast prepare and commit information and ensure communication costs are within acceptable limits.
 - 4.The batch consensus is used to replace the requirement of consensus for each block in PBFT, and the ideal information of real-time BFT is approached and the network load is reduced through broadcasting the related information of multiple blocks at a time. 
 
 The status of the PBFT on the BOS Network is described as follows:
-
 - **Pre-prepare**, indicating that after a block is produced, it is broadcasted to all other producing nodes in the network. It can be analogised to BP in EOSIO and broadcasting to the whole network.
 - **Prepare** means that a producing node will broadcast the request to the entire network after receiving the request. It canIt can be analogised to the broadcasting of received information after all the nodes in EOSIO receive the block and verify successfully.
 - **Commit** means that a producing node receives enough prepare messages for the same request and broadcasts the request to the entire network. It can be analogised to the node in EOSIO receiving enough prepare messages for the same block, and proposing a proposed lib message.
@@ -106,7 +99,7 @@ The status of the PBFT on the BOS Network is described as follows:
 - **View** change means that a producing node loses the trust of other nodes for various reasons, the process of the whole system changes the producing node. Since EOSIO adopts the Pipelined BFT algorithm, all BPs are determined in advance by voting. Within one BP schedule, the order of the whole system is completely unchanged. When the network is in good condition and the producing node has not changed, it can be considered that there is no view change state. After the introduction of PBFT, in order to avoid the fork which may cause the consensus to become unable to advance, the view change mechanism is introduced. All unconsented information is discarded and consensus procedures are continually attempted until the consensus is made.
 - **Checkpoint**, which refers to the recording of consensus evidence at a block height to provide a proof of security. This checkpoint is considered stable when there are enough producing nodes with the same checkpoint. The generation of checkpoints is done according to two major categories: one category consists of ﬁxed block generation, and the other consists of special pointpoints that are structurally requires the provision of security proof, such as a block in which the block BP schedule changes.
 
-![IMG](../../../../../../libhash/Documentation/imgs/bospbft.png) 
+![IMG](/imgs/bospbft.png) 
 
 Through observation of the existing EOS main network, the network delay between the global nodes is mostly within 1 second. According to the consensus algorithm of the PBFT of the BOS Network, consensus is projected to take 3 seconds to achieve immutability in most scenarios (pre-prepare, prepare, commit). Shortening the trusted time of a transaction from minutes to seconds will allow many scenarios to be implemented on the BOS Network. 
 
@@ -117,7 +110,6 @@ In the EOSIO technology white paper, interchain communication is used as a solut
 The basis for decentralized cross-chain communication is Light Weight Client and SPV/Simple Payment Verification. The Light Weight Client is a chain consisting of block heads, excluding the block bodies, so the Light Weight Client only takes up very little space. the SPV technology uses the merkle path to prove whether a transaction exists in a certain block [3]. 
 
 The advantages of BOSCore cross-chain scheme are as follows: 
-
 1. Completely Decentration. The Light Weight Client is implemented in the smart contract. When the correct starting block information is initialized, the contract can fully verify the validity of all subsequent blocks without relying on the trust of the relay or contract external information.
 2. Light Weight. The Light Weight Client does not need to continuously synchronize all the block heads of the original chain, and only needs to synchronize a part of the segment of the blockchain to obtain a trusted block for verifying the transaction.
 3. Fast Cross-chain Transactions. A cross-chain transaction takes less than 3 minutes from the generation to the conduction of corresponding transaction on the target chain.
