@@ -64,7 +64,7 @@ November 2019 V2
   - [Governance Model](#governance-model)
   - [Economic Model](#economic-model)
 - [Conclusion](#conclusion)
-- [References](#References)
+- [References](#references)
 
 # Background 
 
