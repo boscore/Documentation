@@ -111,7 +111,7 @@ _注：文章中以命令讲解，相关功能都可以在 Oracle Store 页面�
 任何人都可以创建数据服务，并由创建者设置服务基本参数。数据服务创建好后，任何人均可以通过转账质押的方式加入并成为数据提供方，注册时需要**抵押保证金，且保证金不低于服务设置的保证金**才能可成为服务的数据提供方。
 
 ```
-cleos push action ${contract_oracle} regservice '{"account":"${create_account}","base_stake_amount":"1000.0000 BOS","data_format":"json", "data_type":0, "criteria":"以多数人为准", "acceptance":51, "injection_method":0, "duration":500,"provider_limit":3, "update_cycle":600}' -p ${account}
+cleos push action ${contract_oracle} regservice '{"account":"${create_account}","base_stake_amount":"1000.0000 BOS","data_format":"json", "data_type":0, "criteria":"以多数人为准", "acceptance":51, "declaration":"该数据具有时效性", "injection_method":0, "duration":500,"provider_limit":3, "update_cycle":600}' -p ${account}
 ```
 
 **参数说明：**
@@ -122,6 +122,7 @@ cleos push action ${contract_oracle} regservice '{"account":"${create_account}",
 - `data_type`：数据类型，0为确定性，1为不确定性
 - `criteria`：服务准则，当有人对服务发起申诉时，仲裁员会根据证据和服务准则进行裁判
 - `acceptance`：相同数据提供者所占百分比的最小值，小于该值时数据无效，比如共有10个数据提供者，`51`就意为至少5个提供相同数据
+- `declaration`：服务声明和描述
 - `injection_method`：注入方式，0为写入表，后续版本实现其他方式 
 - `duration`：数据收集持续时间，单位为秒
 - `provider_limit`：数据服务开启所需数据提供方数量的最低阈值
@@ -176,7 +177,7 @@ cleos get table ${contract_oracle} ${contract_oracle} dataservices
       "pause_service_stake_amount": "0.0000 BOS",
       "data_format": "json",
       "criteria": "以多数人为准",
-      "update_start_time": "2019-09-19T03:00:00"
+      "declaration": "该数据具有时效性"
     },{
       "service_id": 2,
       "data_type": 0,
@@ -195,6 +196,7 @@ cleos get table ${contract_oracle} ${contract_oracle} dataservices
       "pause_service_stake_amount": "0.0000 BOS",
       "data_format": "{\"data\":\"2019-05-07\",\"time\":\"12:22:21\"}",
       "criteria": "以多数人为准",
+      "declaration": "该数据具有时效性",
       "update_start_time": "2019-09-19T03:00:00"
     }
   ],

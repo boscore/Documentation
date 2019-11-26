@@ -1,6 +1,5 @@
 # NOTICE AND DISCLAIMER
 ---
-
 PLEASE READ THE ENTIRETY OF THIS “NOTICE AND DISCLAIMER” SECTION CAREFULLY. NOTHING HEREIN CONSTITUTES LEGAL, FINANCIAL, BUSINESS OR TAX ADVICE AND YOU SHOULD CONSULT YOUR OWN LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S) BEFORE ENGAGING IN ANY ACTIVITY IN CONNECTION HEREWITH. NEITHER BOS FOUNDATION LTD. (THE FOUNDATION), ANY OF THE PROJECT TEAM MEMBERS (THE BOS TEAM) WHO HAVE WORKED ON THE BOS NETWORK (AS DEFINED HEREIN) OR PROJECT TO DEVELOP THE BOS NETWORK IN ANY WAY WHATSOEVER, ANY DISTRIBUTOR/VENDOR OF BOS TOKENS (THE DISTRIBUTOR), NOR ANY SERVICE PROVIDER SHALL BE LIABLE FOR ANY KIND OF DIRECT OR INDIRECT DAMAGE OR LOSS WHATSOEVER WHICH YOU MAY SUFFER IN CONNECTION WITH ACCESSING THIS WHITEPAPER, THE WEBSITE AT https://boscore.io (THE WEBSITE) OR ANY OTHER WEBSITES OR MATERIALS PUBLISHED BY THE FOUNDATION.
 
 All contributions will be applied towards the advancing, promoting the research, design and development of, and advocacy for an EOSIO ecosystem that supports more DApp and solve real-world problems through the usage of blockchain technology. The Foundation, the Distributor and their various affiliates would develop, manage and operate the BOS Network.
@@ -41,7 +40,7 @@ No part of the Whitepaper or the Website is to be copied, reproduced, distribute
 - [Interchain Communication](#interchain-communication)
 - [Oracle Machine](#Oracle)
 - [Pegged Coin](#pegged-coin)
-- [Post Quantum Encryption Approach]()
+- [Post Quantum Encryption Approach](#Post-quantum-Encryption-Solution)
 - [Accounts](#accounts)
   - [Guaranteed Minimum Provision](#guaranteed-minimum-provision)
   - [Free Account Creation through Red Packet](#free-account-creation-through-red-packet)
@@ -99,7 +98,7 @@ The status of the PBFT on the BOS Network is described as follows:
 - **View** change means that a producing node loses the trust of other nodes for various reasons, the process of the whole system changes the producing node. Since EOSIO adopts the Pipelined BFT algorithm, all BPs are determined in advance by voting. Within one BP schedule, the order of the whole system is completely unchanged. When the network is in good condition and the producing node has not changed, it can be considered that there is no view change state. After the introduction of PBFT, in order to avoid the fork which may cause the consensus to become unable to advance, the view change mechanism is introduced. All unconsented information is discarded and consensus procedures are continually attempted until the consensus is made.
 - **Checkpoint**, which refers to the recording of consensus evidence at a block height to provide a proof of security. This checkpoint is considered stable when there are enough producing nodes with the same checkpoint. The generation of checkpoints is done according to two major categories: one category consists of ﬁxed block generation, and the other consists of special pointpoints that are structurally requires the provision of security proof, such as a block in which the block BP schedule changes.
 
-![IMG](/imgs/bospbft.png) 
+![IMG](imgs/bospbft.png) 
 
 Through observation of the existing EOS main network, the network delay between the global nodes is mostly within 1 second. According to the consensus algorithm of the PBFT of the BOS Network, consensus is projected to take 3 seconds to achieve immutability in most scenarios (pre-prepare, prepare, commit). Shortening the trusted time of a transaction from minutes to seconds will allow many scenarios to be implemented on the BOS Network. 
 
