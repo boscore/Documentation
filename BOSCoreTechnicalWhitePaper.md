@@ -1,5 +1,7 @@
 # NOTICE AND DISCLAIMER
----
+
+------
+
 PLEASE READ THE ENTIRETY OF THIS “NOTICE AND DISCLAIMER” SECTION CAREFULLY. NOTHING HEREIN CONSTITUTES LEGAL, FINANCIAL, BUSINESS OR TAX ADVICE AND YOU SHOULD CONSULT YOUR OWN LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S) BEFORE ENGAGING IN ANY ACTIVITY IN CONNECTION HEREWITH. NEITHER BOS FOUNDATION LTD. (THE FOUNDATION), ANY OF THE PROJECT TEAM MEMBERS (THE BOS TEAM) WHO HAVE WORKED ON THE BOS NETWORK (AS DEFINED HEREIN) OR PROJECT TO DEVELOP THE BOS NETWORK IN ANY WAY WHATSOEVER, ANY DISTRIBUTOR/VENDOR OF BOS TOKENS (THE DISTRIBUTOR), NOR ANY SERVICE PROVIDER SHALL BE LIABLE FOR ANY KIND OF DIRECT OR INDIRECT DAMAGE OR LOSS WHATSOEVER WHICH YOU MAY SUFFER IN CONNECTION WITH ACCESSING THIS WHITEPAPER, THE WEBSITE AT https://boscore.io (THE WEBSITE) OR ANY OTHER WEBSITES OR MATERIALS PUBLISHED BY THE FOUNDATION.
 
 All contributions will be applied towards the advancing, promoting the research, design and development of, and advocacy for an EOSIO ecosystem that supports more DApp and solve real-world problems through the usage of blockchain technology. The Foundation, the Distributor and their various affiliates would develop, manage and operate the BOS Network.
@@ -61,36 +63,15 @@ The emergence of EOS has brought a new paradigm to the blockchain. In just a few
 
 During the gradual development of the EOS main network, the BOS team has found some deviations from prior expectations. As the most competitive third-generation public chain, the BOS team looks forward to seeing more and more applications running on EOS.  Developers will use EOS as their preferred platform for application development. But due to the limitations of the current EOS resource model, higher costs of usage have resulted from the creation of more user accounts and deployment of operating DApps. The key technology IBC required for the realisation of the millions of TPS described in the white paper has not been promoted. The main network has repeatedly experienced situations of insuﬀicient CPU computing resources, which has intensiﬁed the urgency of its demand for cross-chain communication. In addition, due to the Pipeline-DPOS consensus algorithm adopted by EOSIO, a transaction requires nearly three minutes to ensure that it is finalised and immutable. Although performance in this regard is much better in comparison to Bitcoin and Ethereum, it also brings restrictions to many EOS application scenarios. Fast payment mechanisms can only be directed towards small transfers, large transfers require a certain waiting time to ensure that they cannot be changed, which limits the user experience with regards to payment services on the chain   and under the chain.
 
-In addition to the abovementioned issues, there are many other potential improvements that have been actively discussed within the EOS community. As a result the BOS team believes that more experimentation should be done on EOS and more developers or teams rallied to participate in the building of the EOSIO ecosystem. Together, ecosystem participants will make eﬀorts towards application of the blockchain towards diﬀerent scenarios within different industries. BOS will be the first DPoS public chain to achieve decentralized cross-chain and the fastest consensus. It is committed to using technology to create a trusted business ecosystem and to be a DPoS public chain covering one billion users.
-
+In addition to the abovementioned issues, there are many other potential improvements that have been actively discussed within the EOS community. As a result the BOS team believes that more experimentation should be done on EOS and more developers or teams rallied to participate in the building of the EOSIO ecosystem. Together, ecosystem participants will make eﬀorts towards application of the blockchain towards diﬀerent scenarios within different industries. As a fully community-maintained EOS side chain, the BOS Network will make more attempts towards improvement based on its inherited good functions and will feed back to the EOSIO ecosystem its proven new features and functions.
 
 # Overview 
 
-The BOS Network is committed to providing users with easy-to-access and easy-to-use blockchain services, providing a more user-friendly infrastructure for DApp operations, working to support richer application scenarios, and actively experimenting booms in trustless commerice.. In addition to technical improvements, the BOS Network will also make attempts to improve in other areas. For example, in order to increase the level of participation of users in voting, estimator technology can be used to incentive accounts that meet certain predefined parameters. The incentives for BP (block producers) on the BOS Network will be adjusted according to the number of DApps on the chain, TPS, market value, liquidity and other indicators. Each BP incentive awarded is an encouragement for providingthe provision of more resources for the ecology. A resolution reached by a community referendumto the ecosystem. Changes to parameters on the BOS Network will be codedalgorithmically executed as much as possible, to reduce human factors inwithin the process, keeppreserve the process on chain, and maintain fairness and transparency.
+The BOS Network is committed to providing users with easy-to-access and easy-to-use blockchain services, providing a more user-friendly infrastructure for DApp operations, working to support richer application scenarios, and actively experimenting booms in DApp development. In addition to technical improvements, the BOS Network will also make attempts to improve in other areas. For example, in order to increase the level of participation of users in voting, estimator technology can be used to incentive accounts that meet certain predefined parameters. The incentives for BP (block producers) on the BOS Network will be adjusted according to the number of DApps on the chain, TPS, market value, liquidity and other indicators. Each BP incentive awarded is an encouragement for providingthe provision of more resources for the ecology. A resolution reached by a community referendumto the ecosystem. Changes to parameters on the BOS Network will be codedalgorithmically executed as much as possible, to reduce human factors inwithin the process, keeppreserve the process on chain, and maintain fairness and transparency.
 
 The codes of the BOS Network chain are fully contributed and maintained by the community. Each ecosystem participant can submit codes or suggestions. The related process will take reference from existing open source software projects, such as PEP (Python Enhancement Proposals). 
 
 In order to encourage the development of DApps in the BOS Network, the BOS Foundation will provide Token driven low-cost resource mortgage services for DApps in the BOS Network, reduce the operating costs of DApps in the initial development  stage; in addition, it will also regularly provide BOS token incentives to developers who contribute on a regular basis in order to establish a mutually reinforcing community development trend. 
-
-
-# Oracle
-
-The oracle is a concept introduced by the Turing machine model. Due to the problem of downtime and the incompleteness of mathematics, the introduction of this concept will result in some standard Turing machines. In the Turing machine it is deterministic, but the oracle that is introduced in the blockchain is difficult to obtain theoretically defined characteristics. The reason is because the blockchain itself is built on fault-tolerant logic, and it itself The certainty of input is not required, and even deceptive behavior is allowed, which is why the blockchain builds up the Byzantine fault-tolerant structure. Therefore, the predictor of the blockchain is essentially different from the predictor of the traditional sense.
-
-In the face of untrusted Oracle problems, the simple deterministic computing model is obviously powerless. For this reason, we try to introduce a system model of the game to solve these problems. In a nutshell, it is not simply to regard the Oracle machine as the information providing point of the system, but to regard it as the participants of the game and the information user to construct the game model. And by introducing a penalty mechanism and a multi-round game mechanism to establish a credible commitment, the information selection mechanism of the multi-information point is used to reach the Schelling point, thereby improving the credibility of the information; in addition, by introducing the inspector and joining the joint reward and punishment mechanism, The prisoner's dilemma of providing information to the role further ensures credibility.
-
-Some oracles are designed based on the assumption of a trusted data source or an authoritative data source. Such a hypothesis is theoretically very risky and cannot guarantee the authenticity of the data source. The principles that BOS's oracle system follows from the beginning of its construction are:
-
-Without relying on every oracle, the data provider will provide real data, but acknowledge its inadequacy and then add it as a participant in the game, in order to achieve overall credibility in the game.
-
-In this way, as long as the participants are mapped to the real-world roles in the game, not only can the trustworthiness of the blockchain input data be obtained, but we can also output "trust" to the real world. In fact, this is more like a trusted platform based on blockchain, and its service display form is a predictor. The BOS oracle will extend the value of the blockchain from its monetary attributes to the construction of transactions and rules. This extension will solve or improve many real-world trust problems, thereby expanding the application boundaries of the blockchain and ultimately Let blockchain technology land in scenarios other than transaction transfers.
-
-![bosoraclegamemodel](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/oralce/bosoracle_game_model.png)  
-
-
-# Scaling Solution
-
-BOS is actively promoting multi-threaded solutions while exploring a broader scaling solution. Abstract, it is feasible to see the relative independence of the smart contracts running on the blockchain. Therefore, it is feasible to divide the different smart contracts from different perspectives for concurrent execution. So we propose isolation-based calculation. The scaling plan, redefining the role roles and block structure in the network, can improve the overall load capacity of the BOS chain through horizontal scaling.
 
 # Consensus Algorithm 
 
@@ -101,20 +82,22 @@ The long confirmation time for transactions due to DPOS BFT consensus algorithm,
 After analysing the problem of the EOSIO consensus algorithm, in order to shorten the time required before a transaction becomes unchangeable, the BOS Network will use PBFT (Practical Byzantine Fault Tolerance [2]) instead of Pipelined BFT. In this way, BP is able to confirm the blocks immediately. The confirmation of blocks in real time enables the entire system to eventually to approach a near real-time consensus speed. 
 
 The consensus algorithm of the BOS Network is based on the PBFT theory, combined with the EOSIO code to improve, under the premise of ensuring Byzantine fault tolerance, the following changes will be made: 
+
 - 1.The mechanism of the Pipelined BFT's BP round outflow block is retained, and the synchronous clock and the block orders are strongly constrained  similiar to EOS.
 - 2.Remove the logic of the Pipelined BFT Consensus section by removing the implicit confirm and (explicit) confirm sections from the original block to avoid conflicts with PBFT consensus results in edge cases.
 - 3.Consensus communication mechanisms using existing p2p networks will use the PBFT mechanism to broadcast prepare and commit information and ensure communication costs are within acceptable limits.
 - 4.The batch consensus is used to replace the requirement of consensus for each block in PBFT, and the ideal information of real-time BFT is approached and the network load is reduced through broadcasting the related information of multiple blocks at a time. 
 
 The status of the PBFT on the BOS Network is described as follows:
-- **Pre-prepare**, indicating that after a block is produced, it is broadcasted to all other producing nodes in the network. It can be analogised to BP in EOSIO and broadcasting to the whole network.
--  **Prepare** means that a producing node will broadcast the request to the entire network after receiving the request. It canIt can be analogised to the broadcasting of received information after all the nodes in EOSIO receive the block and verify successfully.
--  **Commit** means that a producing node receives enough prepare messages for the same request and broadcasts the request to the entire network. It can be analogised to the node in EOSIO receiving enough prepare messages for the same block, and proposing a proposed lib message.
--  **Committed-local** means that a producing node receives enough commit messages for the same request and completes the verification. It can be analogised to LIB promotion in EOSIO.
--  **View** change means that a producing node loses the trust of other nodes for various reasons, the process of the whole system changes the producing node. Since EOSIO adopts the Pipelined BFT algorithm, all BPs are determined in advance by voting. Within one BP schedule, the order of the whole system is completely unchanged. When the network is in good condition and the producing node has not changed, it can be considered that there is no view change state. After the introduction of PBFT, in order to avoid the fork which may cause the consensus to become unable to advance, the view change mechanism is introduced. All unconsented information is discarded and consensus procedures are continually attempted until the consensus is made.
--  **Checkpoint**, which refers to the recording of consensus evidence at a block height to provide a proof of security. This checkpoint is considered stable when there are enough producing nodes with the same checkpoint. The generation of checkpoints is done according to two major categories: one category consists of ﬁxed block generation, and the other consists of special pointpoints that are structurally requires the provision of security proof, such as a block in which the block BP schedule changes.
 
-![IMG](imgs/bospbft.png) 
+- **Pre-prepare**, indicating that after a block is produced, it is broadcasted to all other producing nodes in the network. It can be analogised to BP in EOSIO and broadcasting to the whole network.
+- **Prepare** means that a producing node will broadcast the request to the entire network after receiving the request. It canIt can be analogised to the broadcasting of received information after all the nodes in EOSIO receive the block and verify successfully.
+- **Commit** means that a producing node receives enough prepare messages for the same request and broadcasts the request to the entire network. It can be analogised to the node in EOSIO receiving enough prepare messages for the same block, and proposing a proposed lib message.
+- **Committed-local** means that a producing node receives enough commit messages for the same request and completes the verification. It can be analogised to LIB promotion in EOSIO.
+- **View** change means that a producing node loses the trust of other nodes for various reasons, the process of the whole system changes the producing node. Since EOSIO adopts the Pipelined BFT algorithm, all BPs are determined in advance by voting. Within one BP schedule, the order of the whole system is completely unchanged. When the network is in good condition and the producing node has not changed, it can be considered that there is no view change state. After the introduction of PBFT, in order to avoid the fork which may cause the consensus to become unable to advance, the view change mechanism is introduced. All unconsented information is discarded and consensus procedures are continually attempted until the consensus is made.
+- **Checkpoint**, which refers to the recording of consensus evidence at a block height to provide a proof of security. This checkpoint is considered stable when there are enough producing nodes with the same checkpoint. The generation of checkpoints is done according to two major categories: one category consists of ﬁxed block generation, and the other consists of special pointpoints that are structurally requires the provision of security proof, such as a block in which the block BP schedule changes.
+
+![IMG](../../../../../../libhash/Documentation/imgs/bospbft.png) 
 
 Through observation of the existing EOS main network, the network delay between the global nodes is mostly within 1 second. According to the consensus algorithm of the PBFT of the BOS Network, consensus is projected to take 3 seconds to achieve immutability in most scenarios (pre-prepare, prepare, commit). Shortening the trusted time of a transaction from minutes to seconds will allow many scenarios to be implemented on the BOS Network. 
 
@@ -125,6 +108,7 @@ In the EOSIO technology white paper, interchain communication is used as a solut
 The basis for decentralized cross-chain communication is Light Weight Client and SPV/Simple Payment Verification. The Light Weight Client is a chain consisting of block heads, excluding the block bodies, so the Light Weight Client only takes up very little space. the SPV technology uses the merkle path to prove whether a transaction exists in a certain block [3]. 
 
 The advantages of BOSCore cross-chain scheme are as follows: 
+
 1. Completely Decentration. The Light Weight Client is implemented in the smart contract. When the correct starting block information is initialized, the contract can fully verify the validity of all subsequent blocks without relying on the trust of the relay or contract external information.
 2. Light Weight. The Light Weight Client does not need to continuously synchronize all the block heads of the original chain, and only needs to synchronize a part of the segment of the blockchain to obtain a trusted block for verifying the transaction.
 3. Fast Cross-chain Transactions. A cross-chain transaction takes less than 3 minutes from the generation to the conduction of corresponding transaction on the target chain.
@@ -133,38 +117,11 @@ The advantages of BOSCore cross-chain scheme are as follows:
 
 BOS provides a redemption channel with the EOS main chain based on the IBC scheme. EOS can be easily circulated between the BOS side chain and the EOS main chain, including other high-quality digital certificates on the EOS; similarly, BOS will advance to establish circulation channels with other EOSIO-based sidechains. And the entire EOSIO ecosystem begins to move into an ecological network. BOS will serve as a core circulation link to accelerate the development and evolution of the entire EOSIO ecosystem. 
 
-# Zero Knowledge Proof based Scaling Plan
-
-For the blockchain, TPS affects the carrying capacity of the entire blockchain system, which determines the boundary of the application and is one of the core indicators of the blockchain. In addition to promoting multi-threading and multi-computing area expansion solutions, while considering the implementation of existing smart contracts based on zero-knowledge is a deterministic and finite step, the existing zero-knowledge proof scheme can be improved and typical for finite-step execution. Optimized implementation can meet practical needs, and we will differentiate between different contract features and true computationally intensive contracts using knowledge-proven methods, rather than computationally intensive, using VM execution schemes, which will ultimately improve effectiveness of calculations.
-
-
-![productverify](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/productverify.png) 
-
-
-The concept of "computing area" is introduced in the expansion scheme. The transactions between each computing area are processed in parallel, and the outbound and execution are performed simultaneously. The BOS main network will become the “core computing area”, which is mainly responsible for the account and the pass system, and related data updates will be synchronized to each computing area.
-
-
-![networktopology](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/networktopology.png)
-
-
-In order to adapt to a large amount of data transmission in a P2P network, network nodes are divided into three types: an outbound node, a data node, and a broadcast node. The outbound node is responsible for concurrent transactions, the broadcast node provides accelerated synchronization of data, and the data nodes can be configured to verify those computing area data. This design will implement network security verification and maintain its anti-attack characteristics while ensuring decentralization.
-
-After adopting the multi-computing area parallel scheme, it is necessary to adjust the block structure to achieve the purpose of reducing data transmission volume and faster consensus. The new block structure will contain data for each calculation block, and the data for each calculation area is calculated and agreed upon.
-
-
-![blockstructure](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/blockstructure.png) 
-
-To ensure data trustworthiness, BOS will introduce a new trusted query function. In summary, a trusted data query requires not only the provision of target data, but also sufficient evidence to prove the credibility of the data. The data record of the chain uses the record structure of MVCC. Each change will increase the version number of the data record by one, and will retain the previous data history. In this design mode, given the height of a transaction, the global state corresponding to the height can be quickly queried, and the Merkle Tree-based data credibility certificate is generated in combination with the current state.
-
-By improving the consensus mechanism, the reliability of a transaction on the BOS chain can be shortened to less than 3 seconds, which is still a bit different from the centralized system. So in order to meet the needs of this near-centralized system, BOS will provide a node that can reach the millisecond level of confirmation, called ThunderNode.
-
-
 # Pegged Coin 
 
 In order to enrich the economic ecosystem of the entire chain, in addition to using the IBC mechanism to establish a distribution channel with the EOSIO main network, the BOS Network will also adopt the “Notary Schemes” to map BTC and ETH to the native chain of the BOS Network in conjunction with the world's top exchanges. Through this trusted channel, both BTC and ETH can easily achieve cross-chain circulation on the BOS Network. This means that for DApps running on the BOS Network, while supporting EOSIO ecosystem digital assets, digital assets under other consensus algorithms can also be supported. In addition, this method can also be used as a solution to improve the liquidity of some coins with low TPS. 
 
 The BOS Network will provide a mechanism for issuing 1:1 secondary pegged virtual tokens for different digital passes and authenticate the identity of trusted intermediaries through BP multi-signatory mechanism. Every trusted intermediary needs to stake a certain quantity of BOS. Organizations or companies with sufficient strength and credibility can apply for “notary” status. When 25 of the top 30 BPs are passed, the secondary pegged virtual currency can be issued. 
-
 
 # Accounts
 
@@ -173,7 +130,6 @@ The BOS Network will provide a mechanism for issuing 1:1 secondary pegged virtua
 Since the EOS main network came online, for ordinary token holders, it is often the case that a transfer fails due to insufficient staked resources. In this case, the only option for users is to ask others for help, which results in poor user experience and intensifying entry barriers.
 
 For a chain, the growth of an active user population will promote the development of the chain, and also promote the development of DApps on the chain, this is vital to the entire ecosystem. In order to solve this problem, the BOS Network implements an improvement. The free resource quota allocated to each user can be adjusted through the parameters of the native blockchain, which is equivalent to a social security system on the BOS Network. In this way, the basic daily transfer needs of most users can be met, thus, there is no need to worry about the inability to use the chain functions due to the lack of initial resource stake. For users with greater usage requirements, resource usage beyond the minimum amount of coverage still needs to be delegated.
-
 
 ## Free Account Creation through Red Packet
 
@@ -186,7 +142,6 @@ By improving the consensus algorithm, the reliability of a transaction on the BO
 Similar to Lightning Networks, most of ThunderNode's transactions are done within a local network, and ThunderNode will ensure that transactions are visible on the BOS Network and cannot be changed. Once the user decides to use a certain ThunderNode, they need to lock part of the balance tokens. This part of the balance can only be used in the ThunderNode. When one decides not to use ThunderNode, the remaining locked BOS can be unlocked and restored to normal use. Once a user chooses to use the ThunderNode and locks a certain number of tokens, he or she needs to send the registration on the BOS Network and wait for it to take effect before he or she can start using it. 
 
 The role of being an operator of ThunderNode is completely open to competition. There are no hard restrictions. Users can also choose in accordance with their own needs. ThunderNode providers can obtain token remuneration through charging a certain service fee.
-
 
 # Enhanced Usability 
 
@@ -202,6 +157,7 @@ bpsig_action_time_seed = sign(BP_Sign_Key, F(block_timestamp, 0.5) + global_acti
 ```
 
 Note:
+
 - BP_Sign_Key: The purpose of signing with a BP private key is to prevent others from a speculative calculation.
 - F: The down integral function of block_timestamp by 0.5, and the BP adjustment timestamp is lowered to make the probability of speculation.
 - Global_action_sequence: global action auto-increment flag, used to prevent INLINE_ACTION attacks.
@@ -236,8 +192,8 @@ The BOS Network plans to build a network that uses dedicated lines to interconne
 
 One of the pursuits of the BOS Network is to minimise the user threshold of usage and present it to users in an easy-to-use and easy-to-understand way. Therefore, the BOS Network official website will provide a feature collection page, which mainly to transform the BOS Network related features into users-usable interfaces, such as red packet, account managers and others. The positioning of the BOS Toolkit is not that of a wallet application, it improves the usability of the functions on the chain, allowing overall improvements in design.
 
-
 ### Account Manager 
+
 EOSIO introduces a flexible account system that allows for relatively complex operations for different privilege levels and different actions. Although this mechanism can implement an operating system level account solution, it is still too technical and complicated for the user. The BOS Network has made one more step in this regard, so that users can use it easily. 
 
 Through the account manager, one can not only set limits for every deal and daily transfers through using the active key of the account. For more advanced owner permissions, the user must not only input the correct password, but also answer the correct question before using or exporting it. It is a rule that is designed to help users understand account permissions and enhance their awareness of security.
@@ -248,12 +204,12 @@ In the implementation of EOSIO, the connection with those nodes depends on the s
 
 The BOS Network has been enhanced to address this, and the configurations can set a nodenode’s status to be open to self-discovery. And subject to the overall limit of the maximum number of connections, even if only one of each team’s nodes has self-discovery configured, it will help establish a higher level of interoperability quality network between the nodes on the BOS Network in. In order to reduce risks, a node only obtains connectable node information from existing nodes in the configuration file, and does not automatically create connections without restriction. 
 
-
 # Ecosystem Model 
 
 ## Issuance Method 
 
 The Distributor which issues and sells BOS shall be an affiliate of the Foundation. The initial supply of BOS is 1 billion. The breakdown is as follows:
+
 - 100 million will be used to do eco-airdrop
   - 50 million directly airdropped to EOS mainnet accounts
   - 50 million will be airdropped based on the transaction volumes of DApps and BP teams
@@ -266,11 +222,13 @@ The Distributor which issues and sells BOS shall be an affiliate of the Foundati
   - 50 million will be up for sale in each round
 
 The annual inflation is 2%:
+
 - 1% for BP rewards
 - 0.8% for developer rewards
 - 0.2% for governance incentives. 
 
 In particular, it is highlighted that BOS:
+
 - (a)is non-refundable and cannot be exchanged for cash (or its equivalent value in any other virtual currency) or any payment obligation by the Foundation, the Distributor or any affiliate;
 - (b)does not represent or confer on the token holder any right of any form with respect to the Foundation, the Distributor (or any of its affiliates), or its revenues or assets, including without limitation any right to receive future dividends, revenue, shares, ownership right or stake, share or security, any voting, distribution, redemption, liquidation, proprietary (including all forms of intellectual property or licence rights), or other financial or legal rights or equivalent rights, or intellectual property rights or any other form of participation in or relating to the BOS Network, the Foundation, the Distributor and/or their service providers;
 - (c)is not intended to represent any rights under a contract for differences or under any other contract the purpose or pretended purpose of which is to secure a profit or avoid a loss;
@@ -279,11 +237,13 @@ In particular, it is highlighted that BOS:
 - (f)does not provide the token holder with any ownership or other interest in the Foundation, the Distributor or any of its affiliates.
 
 The contributions in the token sale will be held by the Distributor (or its affiliate) after the token sale, and contributors will have no economic or legal right over or beneficial interest in these contributions or the assets of that entity after the token sale. To the extent a secondary market or exchange for trading BOS does develop, it would be run and operated wholly independently of the Foundation, the Distributor, the sale of BOS and the BOS Network. Neither the Foundation nor the Distributor will create such secondary markets nor will either entity act as an exchange for BOS.
+
 ## Developer Incentives
 
 To decentralize development of the core protocol, 0.8% of annual inflation will be distributed to BOS core code developers.
 
 Every 3 months, the top 50 block producers nominated by the community will vote on and rank 40 winners to get the awards:
+
 - The top 10 will share 40% (4% each)
 - Individuals ranked 11 to 20 will share 30% (3% each)
 - The last 20 share the remaining 30% (1.5% each) 
@@ -299,7 +259,7 @@ In the process of the ecosystem development of the chain, each chain in the futu
 The governance model of the BOS Network advocates "Code is the law."  Ensuring
 the smooth development of DApps will be the highest priority for the BOS Network. The BOS Network issues an additional 0.2% per year for governance organisations or volunteers who help BOS holders to initiate arbitration/voting (for the avoidance of doubt, the right to vote is restricted solely to voting on features of the BOS Network; it does not entitle BOS holders to vote on the operation and management of the Foundation or its affiliates, or their assets, and does not constitute any equity interest in the Foundation or its affiliates). Anyone in the BOS Network can initiate arbitrations. The more support a proposal gets, the more reliable it is. If the arbitration takes eﬀect, the initiator can receive 2000 BOS as governance incentives.
 
-There are two types of decision or arbitration for the BOS Network: 1.Decided by the agreement of no less than 15 BPs. 2. Community referendum. There is no only arbitration institution in the governance of the BOS Network. But more independent organisations or individuals are encouraged to participate in the process of determining network features. They can obtain community incentives for eﬀective solutions or suggestions.
+There are two types of decision or arbitration for the BOS Network: 1.Decided by the agreement of no less than 15 BPs. 2. Community referendum. There is no single ECAF institution in the governance of the BOS Network. But more independent organisations or individuals are encouraged to participate in the process of determining network features. They can obtain community incentives for eﬀective solutions or suggestions.
 
 Note: The effective standard (for example, no less than N BPs agree that the arbitration will take effect) may change with the ecosystem development of the BOS Network, and any changes must also be voted in accordance with current governance rules. 
 
@@ -317,14 +277,12 @@ As a medium of exchange, BOS is expected to become the base pricing unit for the
 
 Historically, the Bank of England exchanged the full amount of gold with the British pound for the first time. The combination of the Roman law-based laws and the formation of a good business atmosphere attracted the best resources of the world at the time and finally made London the International Financial Centre. The BOS Network will likewise create a historic blockchain business center through the building of a sound infrastructure and establishment of a good business atmosphere. 
 
-
 # Conclusion 
 
-BOSCore is a DPoS public chain dedicated to building a trusted business ecosystem with technology that covers one billion users. From the perspective of the evolution of blockchain, in addition to being the preferred public chain for commercial landing, BOSCore can also serve as a free circulation port for the world of blockchains. BOS comes from the community and will develop better under the maintenance of the community.
-
+The goal of the BOS Network is to build an EOSIO ecosystem that supports more DApp and solve real-world problems through the usage of blockchain technology. From the perspective of the evolution of the blockchain, in addition to becoming the preferred base chain for DApps, the BOS Network aims to serve as a intermediary circulation chain for various heterogeneous chain coins or tokens, and as a "free port" in the blockchain world. The BOS Network comes from the community and will better develop through the joint eﬀorts of the community.
 
 # References 
+
 [1] [ DPOS BFT— Pipelined Byzantine Fault Tolerance ](https://medium.com/eosio/dpos-bft-pipelined-byzantine-fault-tolerance-8a0634a270ba)  
 [2] [ Practical Byzantine Fault Tolerance ](http://pmg.csail.mit.edu/papers/osdi99.pdf)  
 [3] [ Chain Interoperability ](https://static1.squarespace.com/static/55f73743e4b051cfcc0b02cf/t/5886800ecd0f68de303349b1/1485209617040/Chain+Interoperability.pdf) 
-
