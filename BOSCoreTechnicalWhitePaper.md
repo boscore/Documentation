@@ -121,11 +121,58 @@ BOS provides a redemption channel with the EOS main chain based on the IBC schem
 
 With the development of quantum computer technology and the realization of quantum hegemony, general-purpose quantum computers are no longer the holy grail of theoretical reach, and will bring a series of profound changes in the foreseeable future. The collapse of asymmetric cryptosystems based on large number decomposition and discrete logarithm is one of the most significant features in the transformation. The ECDSA signature algorithm currently used by BOS is also inevitable, so we will introduce a new anti-quantum encryption system to meet the above challenges.
 
-Among the many quantum-resistant cryptosystems, we will choose the lattice cryptosystem as the main scheme of BOS quantum-resistant cryptography, and will use NTRU (including encryption and signature) as the main encryption system. FrodoKEM system and Sphincs + (Hash Base) as backup password. Considering that the lattice encryption system has not been theoretically complete and is in the stage of international post-quantum cryptographic standard customization, our scheme will maintain the scalability of a variety of cryptography. At the same time, the lattice-based cryptographic signature system can also facilitate the construction of quantum-safe anonymous coins, which preserves the maximum scalability for BOS, while maintaining support for multiple cryptosystems in the early stage also minimizes the number of cryptosystems due to a certain cryptosystem. The irreparable results of the collapse.
+Among the many quantum-resistant cryptosystems, we will choose the lattice cryptosystem as the main scheme of BOS quantum-resistant cryptography, and will use NTRU (including encryption and signature) as the main encryption system. FrodoKEM system and Sphincs + (Hash Base) as backup passphrase. Considering that the lattice encryption system has not been theoretically complete and is in the stage of international post-quantum cryptographic standard customization, our scheme will maintain the scalability of a variety of cryptography. At the same time, the lattice-based cryptographic signature system can also facilitate the construction of quantum-safe anonymous coins, which preserves the maximum scalability for BOS, while maintaining support for multiple cryptosystems in the early stage also minimizes the number of cryptosystems due to a certain cryptosystem. The irreparable results of the collapse.
 
 # Scaling Plan based on Zero Knowledge Proof
 
-For the blockchain, the capacity of the TPS that affects the entire blockchain system determines the boundaries of the application and is one of the core indicators of the blockchain. In addition to promoting multi-threaded and multi-computation area expansion schemes, based on research and accumulation of zero-knowledge proofs, BOS will also consider expansion schemes based on zero-knowledge proofs. Considering that the execution of existing smart contracts is definite and limited steps, the existing zero-knowledge proof scheme can be improved and optimized for the characteristics of limited step execution so that it can meet practical needs. At the same time, we will carry out different contract characteristics The distinction makes true computationally intensive contracts adopt the method of knowledge proof, while non-computation intensive uses the VM execution scheme, which will ultimately maximize the computing efficiency.
+For the blockchain, the capacity of the TPS that affects the entire blockchain system determines the boundaries of the application and is one of the core indicators of the blockchain. In addition to promoting multi-threaded and multi-computation area scaling solutions, based on research and accumulation of zero-knowledge proofs, BOS will also consider scaling solutions based on zero-knowledge proofs. Considering that the execution of existing smart contracts is definite and limited steps, the existing zero-knowledge proof scheme can be improved and optimized for the characteristics of limited step execution so that it can meet practical needs. At the same time, we will carry out different contract characteristics The distinction makes true computationally intensive contracts adopt the method of knowledge proof, while non-computation intensive uses the VM execution scheme, which will ultimately maximize the computing efficiency.
+
+
+
+# Oracle
+
+The oracle machine is a concept of Turing machine model dating. Due to the pause problem and mathematical incompleteness, after dating this concept, you will get some results that a standard Turing machine cannot get. It is deterministic in the Turing machine, but the oracles dating in the blockchain are difficult to get theoretically defined characteristics. The reason is that the blockchain itself is built on fault-tolerant logic. It does not require certainty of input, and even allows deceptive behavior. This is also a fundamental difference between the oracles in the blockchain and the traditional oracles.
+
+Facing the problem of untrusted oracles, simple deterministic computing models are obviously powerless. To this end, we try to introduce a game system model to solve these problems. In a nutshell, the oracle is not simply regarded as the system's information supply point, but it is regarded as the participants of the game and the information users to build a game model together. It also establishes a credible commitment by introducing a punishment mechanism and a multi-round game mechanism. The information selection mechanism of multiple information providing points is used to reach the Schelling point, thereby improving the credibility of the information. In addition, by introducing inspectors and adding a joint reward and punishment mechanism, we construct The prisoner's dilemma in the role of information provider further guarantees credibility.
+
+The design of some oracle services is based on the assumption that trusted data sources or authoritative data sources. Such assumptions are theoretically very risky and cannot guarantee the authenticity of data provided by such data sources. The principles of BOS 'oracle system from the beginning of construction are:
+
+Not relying on each oracle machine data provider to provide real data, but admit its deficiencies and add them to the system as participants in the game in order to achieve overall credibility in the game.
+
+In this way, as long as the participants and the real world roles are mapped during the game, not only can we get the credibility of the input data of the blockchain, but we can also output "trust" to the real world. In fact, this is more like a trusted platform based on blockchain, and its service display form is a oracle. The 
+
+BOS oracle will extend the value of the blockchain from its monetary attributes to the construction of transactions and rules. This extension will solve or improve many real-world trust issues, thereby expanding the application boundary of the blockchain, and eventually Let blockchain technology land in scenarios other than transaction transfers.
+
+
+
+![bosoraclegamemodel](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/oralce/bosoracle_game_model.png)  
+
+
+
+# Scaling Solution
+
+While actively promoting multi-threaded solutions, BOS is also exploring broader scaling plans. Abstractly speaking, the smart contracts running on the blockchain are relatively independent of high-probability events. Therefore, it is feasible to divide different smart contracts from a global perspective for concurrent execution. Therefore, we propose based on isolation The calculated capacity scaling scheme redefines the role of nodes and the block structure in the network. The overall load capacity of the BOS chain can be improved through horizontal scaling.
+
+
+![productverify](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/productverify.png)
+
+
+The concept of "BP zone" is introduced in the scaling scheme. Transactions between each BP zone are processed in parallel, and block generation and execution are performed simultaneously. The BOS mainnet will become the "core BP zone", which is mainly responsible for account and token systems, and relevant data updates will be synchronized to each BP zone.
+
+
+![networktopology](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/networktopology.png) 
+
+In order to adapt to the transmission of a large amount of data in P2P networks, network nodes are divided into three types: block producer nodes, data nodes, and broadcast nodes. Block producers are responsible for executing transactions concurrently. Broadcast nodes provide accelerated data synchronization. Data nodes can be configured to verify data in those computing areas. This will implement network security verification and maintain its anti-attack characteristics on the premise of ensuring decentralization.
+
+After adopting the multi-computing area parallel scheme, the block structure needs to be adjusted to achieve the purpose of reducing data transmission volume and faster consensus. The new block structure will contain the data of each calculation block, and the data of each calculation block will be calculated and consensus reached.
+
+
+![blockstructure](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/blockstructure.png) 
+
+
+To ensure the data is trusted, BOS will introduce a new trusted query function. In summary, credible data query not only needs to provide the target data, but also needs to provide sufficient evidence to prove the credibility of the data. The data structure of the chain uses the MVCC record structure. Each change will increase the version number of the data record by one, while retaining the previous data history. In this design mode, given the height of a transaction, the global state corresponding to that height can be quickly queried, and the current state is used to generate a Merkle Tree-based data credible proof.
+
+The horizontal scaling plan of the BOS computing area will be carried out simultaneously with the multi-threaded solution. While ensuring decentralization and data security, the horizontal and vertical scaling of computing resources will be achieved, thereby laying a solid foundation for achieving the goal of one billion users.
 
 # Pegged Coin 
 
@@ -147,7 +194,7 @@ For the EOSIO main network, account creation costs pose a problem that cannot be
 
 # ThunderNode 
 
-By improving the consensus mechanism, the reliability of a transaction on the BOS chain can be shortened to less than 3 seconds, which is still a bit different from the centralized system. So in order to meet the needs of this near-centralized system, BOS will provide a node that can reach the millisecond level of confirmation, called ThunderNode.
+By improving the consensus mechanism, the reliable time of a transaction on the BOS chain can be shortened to less than 3s. This time is still somewhat different from the centralized system. Therefore, in order to meet the needs of such a semi-centralized system, BOS will provide a node that can achieve millisecond-level confirmation, called ThunderNode.
 
 Similar to Lightning Networks, most of ThunderNode's transactions are done within a local network, and ThunderNode will ensure that transactions are visible on the BOS Network and cannot be changed. Once the user decides to use a certain ThunderNode, they need to lock part of the balance tokens. This part of the balance can only be used in the ThunderNode. When one decides not to use ThunderNode, the remaining locked BOS can be unlocked and restored to normal use. Once a user chooses to use the ThunderNode and locks a certain number of tokens, he or she needs to send the registration on the BOS Network and wait for it to take effect before he or she can start using it. 
 
