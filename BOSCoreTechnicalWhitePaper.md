@@ -47,7 +47,6 @@ No part of the Whitepaper or the Website is to be copied, reproduced, distribute
 - [ThunderNode](#thundernode)
 - [Enhanced Usability](#enhanced-usability)
   - [Safer Random Number Scheme](#safer-random-number-scheme)
-  - [Oracle Machine](#oracle-machine)
   - [Configurations on Chain](#configurations-on-chain)
   - [More Plugins](#more-plugins)
   - [Producing Schedule according to Time Zone](#producing-schedule-according-to-time-zone)
@@ -117,17 +116,6 @@ The advantages of BOSCore cross-chain scheme are as follows:
 
 BOS provides a redemption channel with the EOS main chain based on the IBC scheme. EOS can be easily circulated between the BOS side chain and the EOS main chain, including other high-quality digital certificates on the EOS; similarly, BOS will advance to establish circulation channels with other EOSIO-based sidechains. And the entire EOSIO ecosystem begins to move into an ecological network. BOS will serve as a core circulation link to accelerate the development and evolution of the entire EOSIO ecosystem. 
 
-# Post-quantum Encryption Solution
-
-With the development of quantum computer technology and the realization of quantum hegemony, general-purpose quantum computers are no longer the holy grail of theoretical reach, and will bring a series of profound changes in the foreseeable future. The collapse of asymmetric cryptosystems based on large number decomposition and discrete logarithm is one of the most significant features in the transformation. The ECDSA signature algorithm currently used by BOS is also inevitable, so we will introduce a new anti-quantum encryption system to meet the above challenges.
-
-Among the many quantum-resistant cryptosystems, we will choose the lattice cryptosystem as the main scheme of BOS quantum-resistant cryptography, and will use NTRU (including encryption and signature) as the main encryption system. FrodoKEM system and Sphincs + (Hash Base) as backup passphrase. Considering that the lattice encryption system has not been theoretically complete and is in the stage of international post-quantum cryptographic standard customization, our scheme will maintain the scalability of a variety of cryptography. At the same time, the lattice-based cryptographic signature system can also facilitate the construction of quantum-safe anonymous coins, which preserves the maximum scalability for BOS, while maintaining support for multiple cryptosystems in the early stage also minimizes the number of cryptosystems due to a certain cryptosystem. The irreparable results of the collapse.
-
-# Scaling Plan based on Zero Knowledge Proof
-
-For the blockchain, the capacity of the TPS that affects the entire blockchain system determines the boundaries of the application and is one of the core indicators of the blockchain. In addition to promoting multi-threaded and multi-computation area scaling solutions, based on research and accumulation of zero-knowledge proofs, BOS will also consider scaling solutions based on zero-knowledge proofs. Considering that the execution of existing smart contracts is definite and limited steps, the existing zero-knowledge proof scheme can be improved and optimized for the characteristics of limited step execution so that it can meet practical needs. At the same time, we will carry out different contract characteristics The distinction makes true computationally intensive contracts adopt the method of knowledge proof, while non-computation intensive uses the VM execution scheme, which will ultimately maximize the computing efficiency.
-
-
 
 # Oracle
 
@@ -144,9 +132,7 @@ In this way, as long as the participants and the real world roles are mapped dur
 BOS oracle will extend the value of the blockchain from its monetary attributes to the construction of transactions and rules. This extension will solve or improve many real-world trust issues, thereby expanding the application boundary of the blockchain, and eventually Let blockchain technology land in scenarios other than transaction transfers.
 
 
-
 ![bosoraclegamemodel](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/oralce/bosoracle_game_model.png)  
-
 
 
 # Scaling Solution
@@ -173,6 +159,18 @@ After adopting the multi-computing area parallel scheme, the block structure nee
 To ensure the data is trusted, BOS will introduce a new trusted query function. In summary, credible data query not only needs to provide the target data, but also needs to provide sufficient evidence to prove the credibility of the data. The data structure of the chain uses the MVCC record structure. Each change will increase the version number of the data record by one, while retaining the previous data history. In this design mode, given the height of a transaction, the global state corresponding to that height can be quickly queried, and the current state is used to generate a Merkle Tree-based data credible proof.
 
 The horizontal scaling plan of the BOS computing area will be carried out simultaneously with the multi-threaded solution. While ensuring decentralization and data security, the horizontal and vertical scaling of computing resources will be achieved, thereby laying a solid foundation for achieving the goal of one billion users.
+
+
+# Post-quantum Encryption Solution
+
+With the development of quantum computer technology and the realization of quantum hegemony, general-purpose quantum computers are no longer the holy grail of theoretical reach, and will bring a series of profound changes in the foreseeable future. The collapse of asymmetric cryptosystems based on large number decomposition and discrete logarithm is one of the most significant features in the transformation. The ECDSA signature algorithm currently used by BOS is also inevitable, so we will introduce a new anti-quantum encryption system to meet the above challenges.
+
+Among the many quantum-resistant cryptosystems, we will choose the lattice cryptosystem as the main scheme of BOS quantum-resistant cryptography, and will use NTRU (including encryption and signature) as the main encryption system. FrodoKEM system and Sphincs + (Hash Base) as backup passphrase. Considering that the lattice encryption system has not been theoretically complete and is in the stage of international post-quantum cryptographic standard customization, our scheme will maintain the scalability of a variety of cryptography. At the same time, the lattice-based cryptographic signature system can also facilitate the construction of quantum-safe anonymous coins, which preserves the maximum scalability for BOS, while maintaining support for multiple cryptosystems in the early stage also minimizes the number of cryptosystems due to a certain cryptosystem. The irreparable results of the collapse.
+
+# Scaling Plan based on Zero Knowledge Proof
+
+For the blockchain, the capacity of the TPS that affects the entire blockchain system determines the boundaries of the application and is one of the core indicators of the blockchain. In addition to promoting multi-threaded and multi-computation area scaling solutions, based on research and accumulation of zero-knowledge proofs, BOS will also consider scaling solutions based on zero-knowledge proofs. Considering that the execution of existing smart contracts is definite and limited steps, the existing zero-knowledge proof scheme can be improved and optimized for the characteristics of limited step execution so that it can meet practical needs. At the same time, we will carry out different contract characteristics The distinction makes true computationally intensive contracts adopt the method of knowledge proof, while non-computation intensive uses the VM execution scheme, which will ultimately maximize the computing efficiency.
+
 
 # Pegged Coin 
 
