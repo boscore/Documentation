@@ -131,11 +131,9 @@ In this way, as long as the participants and the real world roles are mapped dur
 
 BOS oracle will extend the value of the blockchain from its monetary attributes to the construction of transactions and rules. This extension will solve or improve many real-world trust issues, thereby expanding the application boundary of the blockchain, and eventually Let blockchain technology land in scenarios other than transaction transfers.
 
-
 ![bosoraclegamemodel](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/oralce/bosoracle_game_model.png)  
 
-
-# Scaling out-out Solution
+# Scaling out Solution
 
 BOS is actively promoting and exploring broader Scaling out plans. Abstractly speaking, the smart contracts running on the blockchain are relatively independent of high-probability events. Therefore, it is feasible to divide different smart contracts from a global perspective for concurrent execution. We propose Scaling out solution based on isolated calculation. This solution will redefine the roles and block structure of the nodes in the network, in order to leverage on horizontal Scaling out to improve the overall BOS chain loading capability.
 
@@ -143,13 +141,9 @@ BOS is actively promoting and exploring broader Scaling out plans. Abstractly sp
 
 The concept of "zone" is introduced in the Scaling out solution. Transactions between each computational zone are processed in parallel, and block generation and execution are performed simultaneously. The BOS mainnet will become the "core computational zone", which will provide the necessary account and token systems and relevant data will be synchronized to each zone.
 
-
 ![networktopology](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/networktopology.png) 
 
-
-
 There are three types of network node: bp node, broadcast node and data nodes:
-
 BP nodes are responsible for signing and executing the transactions concurrently. Broadcast nodes can accelerate data synchronization. Data nodes can be configured to verify data in those zone section within the block. This will realize network security verification and maintain its anti-attack characteristics on the premise of ensuring decentralization.
 
 After adopting the multi-zone parallel scheme, the block structure needs to be adjusted to achieve the purpose of reducing network traffic and faster consensus. The new block structure will contain the data of each calculation block, and the data section of each calculation block will be calculated and consensus reached.
@@ -160,7 +154,6 @@ To ensure the trustworthiness of data, BOS will introduce a new trusted query fu
 
 The horizontal scaling out plan of the BOS zone will be implemented simultaneously with the multi-threaded solution. While decentralization and data security, the horizontal and vertical Scaling out of computing resources will be achieved, thereby laying a solid foundation for achieving the goal of one billion users.
 
-
 # Post-Quantum Encryption Solution
 
 With the development of quantum computer technology and the realization of quantum hegemony, general-purpose quantum computers are no longer the holy grail. Quantum computer will bring a series of profound changes in the foreseeable future. The collapse of asymmetric cryptosystems based on large number decomposition and discrete logarithm is one of the most significant features in the transformation. The ECDSA signature algorithm currently used by BOS is also inevitable, so we will introduce a new anti-quantum encryption system to meet the above challenges.
@@ -168,9 +161,7 @@ With the development of quantum computer technology and the realization of quant
 Among the many quantum-resistant cryptosystems, 
 
 Firstly, we will choose the lattice cryptosystem as the main architecture for BOS quantum-resistant cryptography.
-
 Secondly, we will NTRU (including encryption and signature) as the main encryption system.
-
 Thirdly, we will use FrodoKEM system and Sphincs + (Hash Base) as backup encryption system. 
 
 Considering that the lattice encryption system has not been theoretically complete and is in the stage of international post-quantum cryptographic standard customization, our solution will maintain the scalability of a variety of cryptography. Meanwhile, the lattice-based cryptographic signature system can also facilitate the construction of quantum-safe anonymous coins.
@@ -182,8 +173,6 @@ This design will support the maximum scalability for BOS, while preserve the max
 For the blockchain, TPS that affects the overall capability of entire blockchain system. As one of the core indicators, TPS also determines the boundaries of the application. In addition to promoting multi-threaded and multi-computation area Scaling out solutions, based on research and accumulation of zero-knowledge proofs, BOS will also consider Scaling out solutions based on zero-knowledge proofs. 
 
 Considering the existing intelligent contract execution step is to determine and limited, so we can be targeted to improve and optimize the existing zero knowledge proof solution to meet the functional requirements, at the same time we will according to the characteristics of different contracts to distinguish the compute-intensive contracts using knowledge proof plan execution,Non-computationally intensive execution is performed using the VM scheme, In this way, the computational efficiency can be maximized.
-
-
 
 # Pegged Coin 
 
