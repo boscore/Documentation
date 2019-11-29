@@ -38,9 +38,9 @@ No part of the Whitepaper or the Website is to be copied, reproduced, distribute
 - [Overview](#overview)
 - [Consensus Algorithm](#consensus-algorithm)
 - [Interchain Communication](#interchain-communication)
-- [Oracle Machine](#Oracle)
+- [Oracle Machine](#oracle)
 - [Pegged Coin](#pegged-coin)
-- [Post Quantum Encryption Approach](#Post-quantum-Encryption-Solution)
+- [Post Quantum Encryption Approach](#post-quantum-Encryption-Solution)
 - [Accounts](#accounts)
   - [Guaranteed Minimum Provision](#guaranteed-minimum-provision)
   - [Free Account Creation through Red Packet](#free-account-creation-through-red-packet)
@@ -146,7 +146,7 @@ The concept of "zone" is introduced in the Scaling out solution. Transactions be
 There are three types of network node: bp node, broadcast node and data nodes:
 BP nodes are responsible for signing and executing the transactions concurrently. Broadcast nodes can accelerate data synchronization. Data nodes can be configured to verify data in those zone section within the block. This will realize network security verification and maintain its anti-attack characteristics on the premise of ensuring decentralization.
 
-After adopting the multi-zone parallel scheme, the block structure needs to be adjusted to achieve the purpose of reducing network traffic and faster consensus. The new block structure will contain the data of each calculation block, and the data section of each calculation block will be calculated and consensus reached.
+After adopting the multi-zone parallel scheme, the block structure needs to be adjusted to achieve the purpose of reducing network traffic and faster consensus. The new block structure will contain the data of each computional-zone, and the data section of each calculation block will be calculated and consensus reached.
 
 ![blockstructure](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/blockstructure.png) 
 
